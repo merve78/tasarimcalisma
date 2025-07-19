@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <style>
+     /* 🔽 Video altına siyaha doğru kademeli geçiş */
+  .video-fade-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 180px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #000 100%);
+    z-index: 20;
+    pointer-events: none;
+  }
+
+  #sticky-text {
+  position: relative;
+  z-index: 10;
+}
+
+  </style>
+</head>
+<body>
+ <header>
+   <div class="relative w-full h-[800px] overflow-hidden">
+    <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+    <source src="./images/file.mp4" type="video/mp4" /></video>
+        <div class="relative z-10  flex flex-row justify-between text-center py-10 px-32 ">
+          <div><a href="1" class="text-xl font-bold ">A U T O N O</a></div>
+          <div>
+            <div class="flex flex-row gap-10 text-center justify-between font-light px-10 ">
+                <div><a href="2">Teknoloji</a></div>
+                <div><a href="3">Hakkında</a></div>
+                <div><a href="4">Kariyer</a></div>
+                <div>
+                    <a href="5" class="bg-black text-white hover:bg-white hover:text-black px-4 py-2 rounded-3xl transition-all duration-300">Abone ol</a>
+               </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="sticky-text" class="flex flex-col z-10 text-center items-center font-light tracking-widest py-16 ">
+            <h1 class="text-7xl mb-4 ">MOBİLİTENİN</h1>
+            <h1 class="text-7xl mb-4 ">GELECEĞİ BURADA</h1>
+            <h3 class="text-2xl">Autono ile güvenli otonom sürüş deneyimini keşfedin.</h3>
+        </div>
+        <div class="video-fade-bottom"></div>
+    </div>
+</header>
+
+<section class=" bg-black h-[800px]">
+  <div class="flex justify-between bg-black items-center mx-28 h-[800px] gap-10">
+  <div>
+    <div style="border-left: 2px solid gray; padding-left: 45px;">
+       <h1 class="text-gray-400 mb-8 text-lg tracking-widest">VİZYON</h1>
+       <h2 class="text-white text-3xl font-sans tracking-widest mb-3">Tüm Dünyanın</h2>
+       <h2 class="text-white text-3xl font-sans tracking-widest mb-3">Otomobillere Bakışını</h2>
+       <h2 class="text-white mb-6 text-3xl tracking-widest font-sans">Değiştiriyoruz</h2>
+      <div class="text-white tracking-widest">
+        <p>Bu, bir paragraf. Kendi metninizi</p>
+        <p>eklemek için tıklayın. İçeriğinizi</p>
+        <p>eklemek ve yazı tipini değiştirmek için</p>
+        <p>“Metni Düzenle” düğmesine tıklayın</p>
+        <p>veya buraya çift tıklayın. Burası, bir</p>
+        <p>hikâye anlatmak ve kullanıcılarınıza</p>
+        <p>kendinizi tanıtmak için harika bir yer.</p>
+     </div>
+    </div>
+  </div>
+  <div class="flex-grow flex justify-end">
+    <img src="images/img-1.png" alt="img" class="w-[600px]">
+  </div>
+</div>
+</section>
+
+<section class="bg-white h-[280px]">
+
+  <div class="mx-28 py-28"> 
+    <div style="border-left: 2px solid gray; padding-left: 45px;">
+      <h1 class="text-gray-500 mb-8 text-md tracking-widest">HİZMETLER</h1>
+      <h2 class="text-gray-900 mb-3 text-2xl tracking-widest">Dünyanın Her Yerinde</h2>
+      <h2 class="text-black mb-3 text-2xl tracking-widest">Olağanüstü Ürünler ve</h2>
+      <h2 class="text-black text-2xl tracking-widests">Hizmetler Sunuyoruz</h2>
+    </div>
+  </div>
+</section>
+<!--ikiinci bölüm-->
+<section class="bg-white h-[600px]">
+  <div class="flex mx-28 justify-between items-center h-[600px]">
+    <div>
+       <div style="border-left: 2px solid white; padding-left: 45px;">
+        <h1 class="text-black mb-5 text-4xl  tracking-widest">OTONOM</h1>
+        <h2 class="text-black mb-6 text-4xl  tracking-widest">SÜRÜŞ</h2>
+        <p class="text-gray-600 text-lg ">Bu, bir paragraf. Kendi metninizi</p>
+        <p class="text-gray-600 text-lg ">eklemek için tıklayın. İçeriğinizi eklemek</p>
+        <p class="text-gray-600 text-lg ">ve yazı tipini değiştirmek için “Metni</p>
+        <p class="text-gray-600 text-lg ">Düzenle” düğmesine tıklayın veya</p>
+        <p class="text-gray-600 text-lg ">buraya çift tıklayın. Burası, bir hikâye</p>
+        <p class="text-gray-600 text-lg ">anlatmak ve kullanıcılarınıza kendinizi</p>
+        <p class="text-gray-600 text-lg  mb-6">tanıtmak için harika bir yer.</p>
+        <button class="bg-white border-1 border-black text-black px-6 py-2 hover:text-white hover:bg-black rounded-xl">Daha Fazla</button>
+      </div>
+    </div>
+    <div>
+      <img src="images/img-2.png" alt="img" class="w-[600px]">
+    </div>
+  </div>
+
+</section>
+
+<!--üçüncü bölüm-->
+<section class="bg-white h-[600px]">
+  <div class="flex mx-28 justify-between items-center h-[600px]">
+    <div>
+      <img src="images/img-3.png" alt="img" class="w-[600px]">
+    </div>
+    <div>
+       <div style="border-left: 2px solid white; padding-left: 10px;">
+        <h1 class="text-black mb-5 text-4xl tracking-widest ">GERÇEK</h1>
+        <h2 class="text-black mb-6 text-4xl  tracking-widest">ZAMANLI BİLGİ</h2>
+        <p class="text-gray-600 text-lg ">Bu, bir paragraf. Kendi metninizi</p>
+        <p class="text-gray-600 text-lg ">eklemek için tıklayın. İçeriğinizi eklemek</p>
+        <p class="text-gray-600 text-lg ">ve yazı tipini değiştirmek için “Metni</p>
+        <p class="text-gray-600 text-lg ">Düzenle” düğmesine tıklayın veya</p>
+        <p class="text-gray-600 text-lg ">buraya çift tıklayın. Burası, bir hikâye</p>
+        <p class="text-gray-600 text-lg ">anlatmak ve kullanıcılarınıza kendinizi</p>
+        <p class="text-gray-600 text-lg  mb-6">tanıtmak için harika bir yer.</p>
+        <button class="bg-white border-1 border-black text-black px-6 py-2 hover:text-white hover:bg-black rounded-xl">Daha Fazla</button>
+      </div>
+    </div>
+  </div>
+
+</section>
+<!--dördüncü bölüm-->
+<section class="bg-white h-[600px]">
+  <div class="flex mx-28 justify-between items-center h-[600px]">
+    <div>
+       <div style="border-left: 2px solid white; padding-left: 45px;">
+        <h1 class="text-black mb-5 text-4xl  tracking-widest">ALGILAMA</h1>
+        <h2 class="text-black mb-6 text-4xl tracking-widest">ÖZELLİĞİ</h2>
+        <p class="text-gray-600 text-lg ">Bu, bir paragraf. Kendi metninizi</p>
+        <p class="text-gray-600 text-lg ">eklemek için tıklayın. İçeriğinizi eklemek</p>
+        <p class="text-gray-600 text-lg ">ve yazı tipini değiştirmek için “Metni</p>
+        <p class="text-gray-600 text-lg ">Düzenle” düğmesine tıklayın veya</p>
+        <p class="text-gray-600 text-lg ">buraya çift tıklayın. Burası, bir hikâye</p>
+        <p class="text-gray-600 text-lg ">anlatmak ve kullanıcılarınıza kendinizi</p>
+        <p class="text-gray-600 text-lg  mb-6">tanıtmak için harika bir yer.</p>
+        <button class="bg-white border-1 border-black text-black px-6 py-2 hover:text-white hover:bg-black rounded-xl">Daha Fazla</button>
+      </div>
+    </div>
+    <div>
+      <img src="images/img-4.png" alt="img" class="w-[600px]">
+    </div>
+  </div>
+
+</section>
+
+<!--beşinci bölüm-->
+<section class="bg-[url('./images/img--5.jpg')] h-[800px]  bg-cover bg-center bg-no-repeat pt-10">
+     <div class="bg-black rounded-2xl h-[600px] w-[500px] ml-20 mt-20 px-10 py-10">
+       <div style="border-left: 2px solid tomato; padding-left: 45px;">
+        <h1 class="text-white mb-8 text-sm font-light">NEDEN AUTONO</h1>
+        <h2 class="text-white mb-3 text-2xl  tracking-widest ">Yeni bir üretim yöntemi</h2>
+        <h2 class="text-white mb-3 text-2xl  tracking-widest">kullanan, farklı bir</h2>
+        <h2 class="text-white mb-12 text-2xl  tracking-widest">yaklaşım</h2>
+         <p class="text-white text-lg ">Bu, bir paragraf. Kendi metninizi</p>
+        <p class="text-white text-lg ">ve yazı tipini değiştirmek için “Metni</p>
+        <p class="text-white text-lg ">Düzenle” düğmesine tıklayın veya</p>
+        <p class="text-white text-lg ">buraya çift tıklayın. Burası, bir hikâye</p>
+        <p class="text-white text-lg ">anlatmak ve kullanıcılarınıza kendinizi</p>
+        <p class="text-white text-lg mb-12">tanıtmak için harika bir yer.</p>
+        <button class="bg-black border-2 border-white text-white px-6 py-2 hover:text-black hover:bg-white rounded-xl">Daha Fazla</button>
+      </div>
+    </div>
+</section>
+
+<!--altıncı bölüm-->
+<section class="bg-white h-[600px]">
+  <div class="flex justify-between items-center h-[600px]">
+    <div>
+      <img src="images/img-6.png" alt="img" class="w-[600px]">
+  </div>
+    <div class="px-48">
+       <div style="border-left: 2px solid white; padding-left: 10px;">
+         <h1 class="text-black mb-15 text-3xl font-light tracking-widest ">Rakamlarla Autono</h1>
+           <div class="flex gap-16 text-black text-start mb-20">
+             <!-- 200 KUTUSU -->
+             <div class="flex flex-col items-start">
+             <span class="text-4xl">200</span>
+             <div class="w-32 h-[2px] bg-gray-400 mt-2 mb-2"></div> <!-- uzun çizgi -->
+             <p class="text-sm text-gray-500">ÇALIŞAN</p>
+           </div>
+
+             <!-- 5 KUTUSU -->
+           <div class="flex flex-col items-start">
+             <span class="text-4xl">5</span>
+             <div class="w-32 h-[2px] bg-gray-400 mt-2 mb-2"></div> <!-- uzun çizgi -->
+             <p class="text-sm text-gray-500">ÇEKİRDEK EKİP</p>
+           </div>
+         </div>
+
+         <div class="flex gap-16 text-black text-start">
+             <!--200 M$ kutusu -->
+             <div class="flex flex-col items-start">
+             <span class="text-4xl">200 M$</span>
+             <div class="w-32 h-[2px] bg-gray-400 mt-2 mb-2"></div> <!-- uzun çizgi -->
+             <p class="text-sm text-gray-500">SERMAYE</p>
+           </div>
+
+             <!--326 kutusu -->
+           <div class="flex flex-col items-start">
+             <span class="text-4xl">326</span>
+             <div class="w-32 h-[2px] bg-gray-400 mt-2 mb-2"></div> <!-- uzun çizgi -->
+             <p class="text-sm text-gray-500">İŞ ORTAĞI</p>
+           </div>
+
+         </div>
+      </div>
+  </div>
+  </div>
+
+</section>
+
+
+
+</body>
+</html>
