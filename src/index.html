@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link href="./output.css" rel="stylesheet">
   <style>
      /* 🔽 Video altına siyaha doğru kademeli geçiş */
@@ -26,19 +27,16 @@
 </head>
 <body class="overflow-x-hidden">
  <header>
-   <div class="relative w-full h-[800px] overflow-hidden ">
+   <div class="relative w-full  overflow-hidden h-[600px] sm:h-[700px] md:h-[800px] lg:h-[900px] ">
     <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
     <source src="./images/file.mp4" type="video/mp4" /></video>
-        <div class="relative z-10  flex flex-col justify-between lg:flex-row gap-4 sm:px-6 lg:px-32 sm:gap-6 md:gap-10  text-center py-10 ">
+        <div class="relative z-10  flex flex-col lg:flex-row justify-between gap-4 px-4 sm:px-6 lg:px-32 sm:gap-6 pt-6 text-center py-10 ">
           <div><a href="1" class="text-xl font-bold ">A U T O N O</a></div>
           <div>
-            <div class="flex flex-row gap-10 text-center justify-between font-light px-10 ">
-                <div><a href="https://tr.wix.com/website-template/view/html/2898?originUrl=https%3A%2F%2Ftr.wix.com%2Fwebsite%2Ftemplates&tpClick=view_button&esi=9b1ab6b4-5094-4891-bde7-dd110bce602a">
-                     Teknoloji</a></div>
-                <div><a href="https://tr.wix.com/website-template/view/html/2898?originUrl=https%3A%2F%2Ftr.wix.com%2Fwebsite%2Ftemplates&tpClick=view_button&esi=9b1ab6b4-5094-4891-bde7-dd110bce602a">
-                     Hakkında</a></div>
-                <div><a href="https://tr.wix.com/website-template/view/html/2898?originUrl=https%3A%2F%2Ftr.wix.com%2Fwebsite%2Ftemplates&tpClick=view_button&esi=9b1ab6b4-5094-4891-bde7-dd110bce602a">
-                    Kariyer</a></div>
+            <div class="flex flex-wrap  sm:text-base text-center justify-center gap-6 font-light px-10 ">
+                <div><a href="1"class="hover:underline">Teknoloji</a></div>
+                <div><a href="2"class="hover:underline">Hakkında</a></div>
+                <div><a href="3" class="hover:underline">Kariyer</a></div>
                 <div>
                     <a href="5" class="bg-black text-white hover:bg-white hover:text-black px-4 py-2 rounded-3xl transition-all duration-300
                                         text-sm sm:text-base whitespace-nowrap">Abone ol</a>
@@ -47,10 +45,10 @@
           </div>
         </div>
 
-        <div id="sticky-text" class="flex flex-col z-10 text-center items-center font-light tracking-widest justify-center  px-4 sm:py-16">
-            <h1 class="sm:text-5xl md:text-6xl lg:text-7xl mb-4 ">MOBİLİTENİN</h1>
-            <h1 class="sm:text-5xl md:text-6xl lg:text-7xl mb-4 ">GELECEĞİ BURADA</h1>
-            <h3 class="text-lg sm:text-xl md:text-2xl">Autono ile güvenli otonom sürüş deneyimini keşfedin.</h3>
+        <div class="flex flex-col z-10 text-center items-center font-light relative top-0 left-0 w-full  tracking-widest px-4 py-3 sm:py-2 md:p-8">
+            <h1 class="sm:text-2xl md:text-4xl lg:text-7xl lg:mb-4 ">MOBİLİTENİN</h1>
+            <h1 class="sm:text-2xl md:text-4xl lg:text-7xl lg:mb-4 ">GELECEĞİ BURADA</h1>
+            <h3 class="text-lg sm:text-lg md:text-2xl">Autono ile güvenli otonom sürüş deneyimini keşfedin.</h3>
         </div>
         <div class="video-fade-bottom"></div>
     </div>
@@ -64,15 +62,13 @@
        <h2 class="text-white lg:text-3xl text-2xl font-sans tracking-widest mb-3">Tüm Dünyanın</h2>
        <h2 class="text-white lg:text-3xl text-2xl font-sans tracking-widest mb-3">Otomobillere Bakışını</h2>
        <h2 class="text-white mb-6 lg:text-3xl text-2xl tracking-widest font-sans">Değiştiriyoruz</h2>
-      <div class="text-white tracking-widest">
-        <p>Bu, bir paragraf. Kendi metninizi</p>
-        <p>eklemek için tıklayın. İçeriğinizi</p>
-        <p>eklemek ve yazı tipini değiştirmek için</p>
-        <p>“Metni Düzenle” düğmesine tıklayın</p>
-        <p>veya buraya çift tıklayın. Burası, bir</p>
-        <p>hikâye anlatmak ve kullanıcılarınıza</p>
-        <p>kendinizi tanıtmak için harika bir yer.</p>
-     </div>
+        <p class="text-white lg:text-lg leading-relaxed">Bu, bir paragraf. Kendi metninizi</p>
+        <p class="text-white lg:text-lg leading-relaxed">eklemek için tıklayın. İçeriğinizi eklemek</p>
+        <p class="text-white lg:text-lg leading-relaxed">ve yazı tipini değiştirmek için “Metni</p>
+        <p class="text-white lg:text-lg leading-relaxed">Düzenle” düğmesine tıklayın veya</p>
+        <p class="text-white lg:text-lg leading-relaxed">buraya çift tıklayın. Burası, bir hikâye</p>
+        <p class="text-white lg:text-lg leading-relaxed">anlatmak ve kullanıcılarınıza kendinizi</p>
+        <p class="text-white lg:text-lg  leading-relaxed">tanıtmak için harika bir yer.</p>
     </div>
   </div>
   <div class="w-full lg:w-1/2 flex justify-center">
@@ -106,7 +102,7 @@
         <p class="text-gray-600 lg:text-lg leading-relaxed">buraya çift tıklayın. Burası, bir hikâye</p>
         <p class="text-gray-600 lg:text-lg leading-relaxed">anlatmak ve kullanıcılarınıza kendinizi</p>
         <p class="text-gray-600 lg:text-lg  leading-relaxed mb-6">tanıtmak için harika bir yer.</p>
-        <button class="bg-white lg:border-1 border-black text-black px-6 py-2 hover:text-white hover:bg-black rounded-xl  transition-all duration-300">Daha Fazla</button>
+        <button class="bg-white border-1 border-black text-black px-6 py-2 hover:text-white hover:bg-black rounded-xl  ">Daha Fazla</button>
       </div>
     </div>
     <div class="w-full lg:w-1/2 flex justify-center mt-10 lg:mt-0">
@@ -122,7 +118,7 @@
     <div class="w-full lg:w-1/2 flex justify-center">
       <img src="images/img-3.png" alt="img" class="w-full max-w-[600px] h-auto object-contain">
     </div>
-    <div class="w-full lg:w-1/2 text-left lg:pl-32">
+    <div class="w-full lg:w-1/2 lg:pl-36 flex justify-center lg:text-left">
        <div style="border-left: 2px solid white; padding-left: 10px;">
         <h1 class="text-black mb-5 text-3xl lg:text-4xl tracking-widest ">GERÇEK</h1>
         <h2 class="text-black mb-6 text-3xl lg:text-4xl tracking-widest">ZAMANLI BİLGİ</h2>
@@ -142,21 +138,21 @@
 <!--dördüncü bölüm-->
 <section class="bg-white py-16">
   <div class="flex flex-col lg:flex-row items-center justify-between gap-10 px-6 lg:px-28">
-    <div>
+    <div class="w-full lg:w-1/2">
        <div style="border-left: 2px solid white; padding-left: 45px;">
-        <h1 class="text-black mb-5  text-3xl lg:text-4xl  tracking-widest">ALGILAMA</h1>
-        <h2 class="text-black mb-6  text-3xl lg:text-4xl tracking-widest">ÖZELLİĞİ</h2>
+        <h1 class="text-black mb-5 text-3xl lg:text-4xl tracking-widest">ALGıLAMA</h1>
+        <h2 class="text-black mb-6 text-3xl lg:text-4xl tracking-widest">ÖZELLİĞİ</h2>
         <p class="text-gray-600 lg:text-lg leading-relaxed">Bu, bir paragraf. Kendi metninizi</p>
         <p class="text-gray-600 lg:text-lg leading-relaxed">eklemek için tıklayın. İçeriğinizi eklemek</p>
         <p class="text-gray-600 lg:text-lg leading-relaxed">ve yazı tipini değiştirmek için “Metni</p>
         <p class="text-gray-600 lg:text-lg leading-relaxed">Düzenle” düğmesine tıklayın veya</p>
         <p class="text-gray-600 lg:text-lg leading-relaxed">buraya çift tıklayın. Burası, bir hikâye</p>
         <p class="text-gray-600 lg:text-lg leading-relaxed">anlatmak ve kullanıcılarınıza kendinizi</p>
-        <p class="text-gray-600 lg:text-lg leading-relaxed mb-6">tanıtmak için harika bir yer.</p>
-        <button class="bg-white border-1 border-black text-black px-6 py-2 hover:text-white hover:bg-black rounded-xl">Daha Fazla</button>
+        <p class="text-gray-600 lg:text-lg  leading-relaxed mb-6">tanıtmak için harika bir yer.</p>
+        <button class="bg-white border-1 border-black text-black px-6 py-2 hover:text-white hover:bg-black rounded-xl  ">Daha Fazla</button>
       </div>
     </div>
-    <div class="w-full lg:w-1/2 flex justify-center">
+    <div class="w-full lg:w-1/2 flex justify-center mt-10 lg:mt-0">
       <img src="images/img-4.png" alt="img" class="w-full max-w-[600px] h-auto object-contain">
     </div>
   </div>
@@ -164,13 +160,13 @@
 </section>
 
 <!--beşinci bölüm-->
-<section class="bg-[url('./images/img--5.jpg')]  bg-cover bg-center bg-no-repeat min-h-[800px] flex items-center px-24">
-     <div class="w-full max-w-lg bg-black bg-opacity-80 rounded-2xl px-5 py-8 md:px-10 md:py-10">
+<section class="bg-[url('./images/img--5.jpg')]  bg-cover bg-center bg-no-repeat lg:h-[800px] flex items-center px-14 py-6 sm:px-6 lg:px-24">
+     <div class="w-full max-w-sm bg-black  rounded-2xl px-6 py-4 mx-auto lg:mx-0">
        <div style="border-left: 2px solid tomato; padding-left: 45px;">
         <h1 class="text-white mb-8 text-sm font-light">NEDEN AUTONO</h1>
         <h2 class="text-white mb-3 text-xl md:text-2xl  tracking-widest ">Yeni bir üretim yöntemi</h2>
         <h2 class="text-white mb-3 text-xl md:text-2xl tracking-widest">kullanan, farklı bir</h2>
-        <h2 class="text-white mb-12 text-xl md:text-2xl  tracking-widest">yaklaşım</h2>
+        <h2 class="text-white mb-12  text-xl md:text-2xl  tracking-widest">yaklaşım</h2>
          <p class="text-white md:text-lg ">Bu, bir paragraf. Kendi metninizi</p>
         <p class="text-white md:text-lg ">ve yazı tipini değiştirmek için “Metni</p>
         <p class="text-white md:text-lg ">Düzenle” düğmesine tıklayın veya</p>
@@ -184,7 +180,7 @@
 
 <!--altıncı bölüm-->
 <section class="bg-white h-auto lg:h-[700px]">
-  <div class="flex justify-between items-center flex-col lg:flex-row px-6 lg:px-0 h-auto lg:h-[700px] gap-10">
+  <div class="flex justify-between items-center flex-col lg:flex-row  py-12 lg:px-0 h-auto lg:h-[700px] gap-8">
     <div class="w-full lg:w-1/2 justify-center">
       <img src="images/img-6.png" alt="img" class="w-[300px] md:w-[400px] lg:w-[700px]">
   </div>
@@ -387,8 +383,8 @@
     </div>
    </div>
     <!--son kısım-->
-     <div class="flex flex-col lg:flex-row justify-between items-center px-10">
-      <div>© 2035, Autono. Wix.com ile oluşturuldu.</div>
+     <div class="flex flex-col lg:flex-row justify-between items-center px-8">
+      <div class="text-sm mb-5">© 2035, Autono. Wix.com ile oluşturuldu.</div>
       <div class="flex justify-between gap-4">
         <a href="https://www.linkedin.com/company/wix-com/"><img src="images/fotor-1.png" alt="1" class="h-6"></a>
         <a href="https://www.facebook.com/wix"><img src="images/footer-2.png" alt="2" class="h-6"></a>
